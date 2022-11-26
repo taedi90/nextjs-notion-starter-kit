@@ -1,4 +1,8 @@
 import { ExtendedRecordMap } from 'notion-types'
+// import {
+//   getCanonicalPageId as getCanonicalPageIdImpl,
+//   parsePageId
+// } from 'notion-utils'
 import {
   getCanonicalPageId as getCanonicalPageIdImpl,
   parsePageId
@@ -20,9 +24,9 @@ export function getCanonicalPageId(
   if (override) {
     return override
   } else {
+    getCanonicalPageIdImpl(pageId, recordMap, {
+      uuid
+    })
     return pageId.replace(/-/g, '')
-    // return getCanonicalPageIdImpl(pageId, recordMap, {
-    //   uuid
-    // })
   }
 }
