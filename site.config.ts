@@ -9,16 +9,16 @@ export default siteConfig({
   rootNotionSpaceId: null,
 
   // basic site info (required)
-  name: 'Taedi\'s Log',
-  domain: 'log.taedi.net',
-  author: 'taedi',
+  name: '김프라 닷컴',
+  domain: 'kimfra.com',
+  author: 'kimfra',
 
   // open graph metadata (optional)
-  description: 'Taedi\'s Log.',
+  description: '개발 & 인프라 정리 노트',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
-  github: 'taedi90',
+  // github: 'taedi90',
   // linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
