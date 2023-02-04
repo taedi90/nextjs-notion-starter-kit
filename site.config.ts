@@ -13,6 +13,8 @@ export default siteConfig({
   domain: 'kimfra.com',
   author: 'kimfra',
 
+  titleSerfix: ' :: 김프라닷컴',
+
   // open graph metadata (optional)
   description: '개발 & 인프라 정리 노트',
 
