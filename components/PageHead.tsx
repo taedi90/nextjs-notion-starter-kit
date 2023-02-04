@@ -82,7 +82,7 @@ export const PageHead: React.FC<
 
       <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-52CHZ4CKK9`}
+            src={`https://www.googletagmanager.com/gtag/js?id=G-EX3C7S5J2T`}
           />
           <script
             dangerouslySetInnerHTML={{
@@ -90,7 +90,7 @@ export const PageHead: React.FC<
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-52CHZ4CKK9', {
+            gtag('config', 'G-EX3C7S5J2T', {
               page_path: window.location.pathname,
             });
           `,
