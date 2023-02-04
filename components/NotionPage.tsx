@@ -20,6 +20,7 @@ import { searchNotion } from '@/lib/search-notion'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
+import { ReactUtterances } from './ReactUtterances'
 // import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
@@ -231,6 +232,20 @@ export const NotionPage: React.FC<types.PageProps> = ({
   const canonicalPageUrl =
     !config.isDev && getCanonicalPageUrl(site, recordMap)(pageId)
 
+    let comments: React.ReactNode = null
+
+    if (block.type === 'page' && block.parent_table === 'collection') {
+      comments = (
+        <ReactUtterances
+          repo='taedi90/notion-blog-comments'
+          issueMap='issue-term'
+          issueTerm='title'
+          label='blog'
+          theme='preferred-color-scheme'
+        />
+      )
+    }
+
   const socialImage = mapImageUrl(
     getPageProperty<string>('Social Image', block, recordMap) ||
       (block as PageBlock).format?.page_cover ||
@@ -278,6 +293,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
+        pageFooter={comments}
         footer={footer}
       />
 
