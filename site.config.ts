@@ -16,7 +16,7 @@ export default siteConfig({
   titleSerfix: ' :: 김프라닷컴',
 
   // open graph metadata (optional)
-  description: '개발 & 인프라 정리 노트',
+  description: '개발자가 되고 싶은 새내기 코더의 메모노트',
 
   // social usernames (optional)
   // twitter: 'transitive_bs',
