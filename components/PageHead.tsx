@@ -99,8 +99,8 @@ export const PageHead: React.FC<
 
       <meta name="naver-site-verification" content="938cb9fd8bc03d8783eaa105389761db78717b4a" />
 
-      {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1882367656929494" 
-      crossOrigin="anonymous"></script> */}
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1882367656929494" 
+      crossOrigin="anonymous"></script>
 
     </Head>
   )
