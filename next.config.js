@@ -3,6 +3,13 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
 })
 
+//disable console log
+const nextConfig = {
+  compiler: {
+    removeConsole: true
+  },
+}
+
 module.exports = withBundleAnalyzer({
   staticPageGenerationTimeout: 300,
   images: {
