@@ -239,7 +239,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         <ReactUtterances
           repo='taedi90/notion-blog-comments'
           issueMap='issue-term'
-          issueTerm='url'
+          issueTerm='pathname'
           label='blog'
           theme='preferred-color-scheme'
         />
