@@ -7,18 +7,19 @@ declare global {
 }
 
 export class GoogleAdSense extends React.Component {
-  componentDidMount() {
-    if (window.adsbygoogle) {
-      // this.setState({ display: 'block' });
-      // const element = document.getElementById('my-element');
-      // // 스타일을 변경합니다.
-      // element.style.display = 'none';
-      if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
-    }
-  }
+  // componentDidMount() {
+  //   if (window.adsbygoogle) {
+  //     // this.setState({ display: 'block' });
+  //     // const element = document.getElementById('my-element');
+  //     // // 스타일을 변경합니다.
+  //     // element.style.display = 'none';
+  //     if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
+  //   }
+  // }
 
   render() {
     return (
+      <>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
@@ -27,6 +28,10 @@ export class GoogleAdSense extends React.Component {
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      </>
     );
   }
 }
