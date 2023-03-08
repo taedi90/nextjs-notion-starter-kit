@@ -1,10 +1,10 @@
 import React from 'react'
 
-declare global {
-  interface Window {
-    adsbygoogle?: any
-  }
-}
+// declare global {
+//   interface Window {
+//     adsbygoogle?: any
+//   }
+// }
 
 export class GoogleAdSense extends React.Component {
   // componentDidMount() {
@@ -19,7 +19,6 @@ export class GoogleAdSense extends React.Component {
 
   render() {
     return (
-      <>
       <ins
         className="adsbygoogle"
         style={{ display: 'block' }}
@@ -28,10 +27,6 @@ export class GoogleAdSense extends React.Component {
         data-ad-format="auto"
         data-full-width-responsive="true"
       />
-      <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-      </>
     );
   }
 }
