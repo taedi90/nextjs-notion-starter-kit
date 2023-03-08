@@ -11,7 +11,7 @@ declare global {
 export class GoogleAdSense extends React.Component {
   componentDidMount() {
     if (window.adsbygoogle) {
-      window.adsbygoogle.push({});
+      if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }
 
