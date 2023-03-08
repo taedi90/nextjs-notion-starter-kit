@@ -237,8 +237,9 @@
   }
 }
 
-.googleAdsense {
-  width: 100%;
-  height: auto;
+ins.adsbygoogle {
+  /* width: 100%;
+  height: auto; */
+  display: block !important;
 }
 
