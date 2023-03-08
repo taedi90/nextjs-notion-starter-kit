@@ -21,6 +21,7 @@ import { useDarkMode } from '@/lib/use-dark-mode'
 
 import { Footer } from './Footer'
 import { ReactUtterances } from './ReactUtterances'
+import { GoogleAdSense } from './GoogleAdsense'
 // import { GitHubShareButton } from './GitHubShareButton'
 import { Loading } from './Loading'
 import { NotionPageHeader } from './NotionPageHeader'
@@ -236,6 +237,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
     if (block.type === 'page' && block.parent_table === 'collection') {
       comments = (
+        <>
+        <GoogleAdSense/>
         <ReactUtterances
           repo='taedi90/notion-blog-comments'
           issueMap='issue-term'
@@ -243,6 +246,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           label='blog'
           theme='preferred-color-scheme'
         />
+        </>
       )
     }
 
