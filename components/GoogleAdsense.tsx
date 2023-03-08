@@ -1,7 +1,5 @@
 import React from 'react'
 
-import styles from './styles.module.css'
-
 declare global {
   interface Window {
     adsbygoogle?: { push: (p: object) => void };
@@ -11,6 +9,10 @@ declare global {
 export class GoogleAdSense extends React.Component {
   componentDidMount() {
     if (window.adsbygoogle) {
+      this.setState({ display: 'block' });
+      // const element = document.getElementById('my-element');
+      // // 스타일을 변경합니다.
+      // element.style.display = 'none';
       if(window) (window.adsbygoogle = window.adsbygoogle || []).push({});
     }
   }
