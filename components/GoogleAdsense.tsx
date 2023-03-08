@@ -1,9 +1,15 @@
 import React from 'react'
 
+declare global {
+  interface Window {
+    adsbygoogle?: { push: () => void };
+  }
+}
+
 export class GoogleAdSense extends React.Component {
   componentDidMount() {
     if (window.adsbygoogle) {
-      window.adsbygoogle.push({});
+      window.adsbygoogle.push();
     }
   }
 
