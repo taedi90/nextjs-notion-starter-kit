@@ -12,16 +12,20 @@ export const GoogleAdSense: React.FC = () => {
     const adTop = document.getElementById('ad-top');
     const adBottom = document.getElementById('ad-bottom');
 
-    const parentNode = document.querySelector('.notion-page-content');
+    const parentNode = document.querySelector('article');
     if (!parentNode) {
       return
     }
 
-    const article = document.querySelector('article');
-    const aside = document.querySelector('aside');
+    const firstChild = parentNode.firstChild as Element | null;
+  if (!firstChild) {
+    return;
+  }
 
-    parentNode.insertBefore(adTop, article);
-    parentNode.insertBefore(adBottom, aside);
+    parentNode.insertBefore(adTop, firstChild);
+    // parentNode.insertBefore(adBottom, aside);
+
+    parentNode.append(adBottom);
 
     // 구글 애드센스 코드 초기화
     (window.adsbygoogle = window.adsbygoogle || []).push({});
