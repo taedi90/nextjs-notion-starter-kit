@@ -237,9 +237,13 @@
   }
 }
 
-ins.adsbygoogle {
-  /* width: 100%;
-  height: auto; */
+div.adsense {
+  width: 100%;
+}
+
+div.adsense ins {
+  width: 100%;
+  height: auto;
   display: block !important;
 }
 

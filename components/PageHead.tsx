@@ -101,9 +101,9 @@ export const PageHead: React.FC<
 
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1882367656929494" 
       crossOrigin="anonymous"></script>
-      <script>
+      {/* <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      </script> */}
 
     </Head>
   )

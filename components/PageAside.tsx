@@ -6,7 +6,6 @@ import { getPageTweet } from '@/lib/get-page-tweet'
 
 import { PageActions } from './PageActions'
 import { PageSocial } from './PageSocial'
-import { GoogleAdSense } from './GoogleAdsense'
 
 export const PageAside: React.FC<{
   block: Block
@@ -21,7 +20,7 @@ export const PageAside: React.FC<{
   if (isBlogPost) {
     const tweet = getPageTweet(block, recordMap)
     if (!tweet) {
-      return <GoogleAdSense/>
+      return null
     }
 
     return <PageActions tweet={tweet} />
