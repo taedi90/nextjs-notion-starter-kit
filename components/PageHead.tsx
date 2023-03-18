@@ -5,6 +5,8 @@ import * as config from '@/lib/config'
 import * as types from '@/lib/types'
 import { getSocialImageUrl } from '@/lib/get-social-image-url'
 
+import Script from 'next/script'
+
 export const PageHead: React.FC<
   types.PageProps & {
     title?: string
@@ -80,11 +82,11 @@ export const PageHead: React.FC<
       <meta name='twitter:title' content={title} />
       <title>{title + config.titleSerfix}</title>
 
-      <script
+      <Script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=G-EX3C7S5J2T`}
           />
-          <script
+          <Script
             dangerouslySetInnerHTML={{
               __html: `
             window.dataLayer = window.dataLayer || [];
@@ -99,11 +101,11 @@ export const PageHead: React.FC<
 
       <meta name="naver-site-verification" content="938cb9fd8bc03d8783eaa105389761db78717b4a" />
 
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1882367656929494" 
-      crossOrigin="anonymous"></script>
+      <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1882367656929494" 
+      crossOrigin="anonymous"></Script>
       {/* <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-      </script> */}
+      </Script> */}
 
     </Head>
   )
