@@ -13,7 +13,7 @@ export default siteConfig({
   domain: 'kimfra.com',
   author: 'kimfra',
 
-  titleSerfix: ' :: 김프라닷컴',
+  titleSerfix: ' :: 핵심만 간결하게',
 
   // open graph metadata (optional)
   description: '개발자가 되고 싶은 새내기 코더의 메모노트',
@@ -49,7 +49,9 @@ export default siteConfig({
   //   '/bar': '0be6efce9daf42688f65c76b89f8eb27'
   // }
   pageUrlOverrides: {
-    '/note': 'b391e7fd93c742a6aae24352cc635ff1'
+    '/note': 'b391e7fd93c742a6aae24352cc635ff1',
+    '/life': 'd8824c44882c4b50b7e7f312f8ba984e',
+    '/about': '31ca345998c3452f982d0eed15c47f52'
   },
 
   // whether to use the default notion navigation style or a custom one with links to
@@ -60,6 +62,10 @@ export default siteConfig({
     {
       title: 'About',
       pageId: '31ca345998c3452f982d0eed15c47f52'
+    },
+    {
+      title: 'Life',
+      pageId: 'd8824c44882c4b50b7e7f312f8ba984e'
     },
     {
       title: 'Note',
