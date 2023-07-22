@@ -278,7 +278,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
-          pageId === site.rootNotionPageId && 'index-page'
+          // 인덱스 레이아웃을 여러곳에서 사용할 수 있도록 수정
+          // pageId === site.rootNotionPageId && 'index-page'
+          config.indexPages.includes(pageId.replaceAll('-','')) && 'index-page'
         )}
         darkMode={isDarkMode}
         components={components}

@@ -63,6 +63,9 @@ export const linkedin: string | null = getSiteConfig('linkedin', null)
 export const newsletter: string | null = getSiteConfig('newsletter', null)
 export const zhihu: string | null = getSiteConfig('zhihu', null)
 
+// 인덱스 레이아웃 페이지 목록
+export const indexPages: Array<string> | null = getSiteConfig('indexPages', null)
+
 export const getMastodonHandle = (): string | null => {
   if (!mastodon) {
     return null

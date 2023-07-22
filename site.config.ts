@@ -71,5 +71,13 @@ export default siteConfig({
       title: 'Note',
       pageId: 'b391e7fd93c742a6aae24352cc635ff1'
     }
+  ],
+
+  // 인덱스 레이아웃을 사용할 페이지 목록
+  indexPages: [
+    'd8824c44882c4b50b7e7f312f8ba984e',
+    'b391e7fd93c742a6aae24352cc635ff1',
+    '7dad521003c141689616b694544219ea'
   ]
+
 })
